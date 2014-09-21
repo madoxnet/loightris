@@ -54,12 +54,12 @@ The code is ugly (_not compliant to PEP8_) and hacky (_yeah..._) but should stil
 
 ##Files
  - ntl_iface.py
- -- This handles writing out the image data in the required format (handle zig-zag) to the Teensy
+   - This handles writing out the image data in the required format (handle zig-zag) to the Teensy
  - ntl_tetris.py
- -- This is the basic game code
+   - This is the basic game code
  - test_game.py
- -- This handles the input mapping, spawns the two independent games, arranges and lays out the display area and manages scoring/end game conditions.
- -- _There's a commented out 180 degree rotation in there, it was used to hide a dead LED pixel..._
+   - This handles the input mapping, spawns the two independent games, arranges and lays out the display area and manages scoring/end game conditions.
+   - _There's a commented out 180 degree rotation in there, it was used to hide a dead LED pixel..._
  - teentris/teentris.ino
- -- Teensy code to drive the LED Panel
+   - Teensy code to drive the LED Panel
 
