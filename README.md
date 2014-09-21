@@ -48,4 +48,18 @@ A Teensy3 (3.0) using the Fast_LED library is used to control the LEDs via Pin 0
 A 200/250W power supply was used to power the LED panel.  The Teensy was powered by USB.  Only GND and DATA wires were connected between the Teensy and the LED Panel.
 
 #Software
+The majority of the code is written in Python using the Pygame and pyserial libraries.
+
+The code is ugly (_not compliant to PEP8_) and hacky (_yeah..._) but should still be relatively readable.
+
+##Files
+ - ntl_iface.py
+ -- This handles writing out the image data in the required format (handle zig-zag) to the Teensy
+ - ntl_tetris.py
+ -- This is the basic game code
+ - test_game.py
+ -- This handles the input mapping, spawns the two independent games, arranges and lays out the display area and manages scoring/end game conditions.
+ -- _There's a commented out 180 degree rotation in there, it was used to hide a dead LED pixel..._
+ - teentris/teentris.ino
+ -- Teensy code to drive the LED Panel
 
