@@ -45,7 +45,11 @@ A 3D Printed guide was used to lay the strips with the required separation and e
 
 A Teensy3 (3.0) using the Fast_LED library is used to control the LEDs via Pin 0, the Teensy3 receives the image information to be displayed via USB.
 
+An USB DDR Mat from eBay was used as the input system.
+
 A 200/250W power supply was used to power the LED panel.  The Teensy was powered by USB.  Only GND and DATA wires were connected between the Teensy and the LED Panel.
+
+The display was driven using a laptop running Ubuntu at Sydney Mini Makerfaire, but the code was originally intended to run on a embedded platform (OpenWRT Router, Chumby Hackerboard, Raspberry Pi).  The minimum requirements are two (2) USB ports (Teensy & DDR Mat) and a sound system (built-in or USB [additional USB port required if USB]).
 
 #Software
 The majority of the code is written in Python using the Pygame and pyserial libraries.
